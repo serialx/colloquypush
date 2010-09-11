@@ -141,9 +141,9 @@ public:
 		set<char> ssBadChars; // hack so we don't have to mess around with modifying the string while iterating through it
 
 		for (CString::iterator it = sRet.begin(); it != sRet.end(); it++) {
-			if (!isprint(*it)) {
-				ssBadChars.insert(*it);
-			}
+			//if (!isprint(*it)) {
+			//	ssBadChars.insert(*it);
+			//}
 		}
 
 		for (set<char>::iterator b = ssBadChars.begin(); b != ssBadChars.end(); b++) {
